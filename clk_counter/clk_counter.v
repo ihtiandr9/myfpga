@@ -1,25 +1,25 @@
-module counter(out, clk, reset);
+module counter(
+  output wire [WIDTH-1 : 0]   out,
+  input wire clk,
+  input wire reset);
 
   parameter WIDTH = 8;
 
-  output [WIDTH-1 : 0] out;
-  input              clk, reset;
-
-  wire [WIDTH-1 : 0]   out;
-  wire               clk, reset;
-
   reg [WIDTH-1 : 0]   cnt;
-  assign out = cnt;
+  wire [WIDTH-1 : 0]   neg;
+  wire [WIDTH-1 : 0]   cma;
 
-  wire [1 : 0]   tmp;
+  assign out = cnt;
+  assign neg = ~out;
+  assign cma = neg + 1;
 
   always @(posedge clk or posedge reset) begin
     if (reset) begin
       cnt <= 0;
-//      tmp <= 2'b00';
+//      assign out = neg;
     end else begin
       cnt <= cnt + 1;
-//      tmp <= 2'b01';
+//      assign out = cnt;
     end
   end
 
