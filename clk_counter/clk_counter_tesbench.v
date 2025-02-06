@@ -1,14 +1,14 @@
 module test;
 
   /* Make a reset that pulses once. */
-  reg reset = 0;
+  reg reset = 1;
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0, test);
-     # 17 reset = 1;
-     # 11 reset = 0;
-     # 29 reset = 1;
-     # 11 reset = 0;
+     # 17 reset = 0;
+     # 11 reset = 1;
+     # 29 reset = 0;
+     # 11 reset = 1;
      # 100 $finish;
   end
 
