@@ -5,17 +5,22 @@ module counter(out, clk, reset);
   output [WIDTH-1 : 0] out;
   input              clk, reset;
 
-  reg [WIDTH-1 : 0]   out;
-  reg [WIDTH-1 : 0]   negcnt;
+  wire [WIDTH-1 : 0]   out;
   wire               clk, reset;
 
-  always @(posedge clk or posedge reset)
+  reg [WIDTH-1 : 0]   cnt;
+  assign out = cnt;
+
+  wire [1 : 0]   tmp;
+
+  always @(posedge clk or posedge reset) begin
     if (reset) begin
-      out <= 0;
-      negcnt <= 7;
+      cnt <= 0;
+//      tmp <= 2'b00';
     end else begin
-      out <= out + 1;
-      negcnt <= negcnt - 1;
+      cnt <= cnt + 1;
+//      tmp <= 2'b01';
     end
+  end
 
 endmodule // counter
