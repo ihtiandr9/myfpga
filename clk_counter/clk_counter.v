@@ -17,8 +17,8 @@ module counter(
 
   always @(posedge clk or posedge counter_reset) begin
     case(counter_reset)
-      1:  cnt = 0;
-      0:  cnt = cnt + 1;
+      1:  cnt <= 0;
+      0:  cnt <= cnt + 1;
     endcase
   end
   
