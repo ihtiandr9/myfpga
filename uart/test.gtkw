@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Wed Feb 12 14:10:44 2025
+[*]
+[dumpfile] "/home/user/proj/myfpga.git/uart/test.vcd"
+[dumpfile_mtime] "Wed Feb 12 14:06:50 2025"
+[dumpfile_size] 129238
+[savefile] "/home/user/proj/myfpga.git/uart/test.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 18 120
+*-11.713820 14 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[sst_width] 223
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 141
+@28
+test.c1.clk50
+test.rxd
+test.c1.state[2:0]
+test.c1.rcv_remain[2:0]
+@23
+test.c1.recv[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
