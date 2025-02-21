@@ -1,6 +1,6 @@
 PROJECT=blink
 
-all: test.vcd 
+all: ${PROJECT}.vvp
 
 test.vcd: ${PROJECT}.vvp
 	./${PROJECT}.vvp
