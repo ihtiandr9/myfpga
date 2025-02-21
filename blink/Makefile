@@ -1,4 +1,4 @@
-PROJECT=clk_counter
+PROJECT=blink
 
 all: test.vcd 
 

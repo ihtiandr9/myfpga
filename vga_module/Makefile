@@ -1,10 +1,12 @@
+PROJECT=vga
+
 all: test.vcd 
 
-test.vcd: vga_module.vvp
-	./vga_module.vvp
+test.vcd: ${PROJECT}.vvp
+	./${PROJECT}.vvp
 
-vga_module.vvp: vga_tb.v vga_module.v _build.sh
-	./_build.sh
+${PROJECT}.vvp: ${PROJECT}_tb.v ${PROJECT}_module.v
+	iverilog -o ${PROJECT}.vvp ${PROJECT}_tb.v ${PROJECT}_module.v
 
 view: test.gtkw test.vcd
 	gtkwave test.gtkw&

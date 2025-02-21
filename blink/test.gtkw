@@ -1,0 +1,21 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Fri Feb 21 13:52:23 2025
+[*]
+[dumpfile] "/home/user/proj/myfpga.git/blink/test.vcd"
+[dumpfile_mtime] "Fri Feb 21 13:50:53 2025"
+[dumpfile_size] 319
+[savefile] "/home/user/proj/myfpga.git/blink/test.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-30.713820 14 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[sst_width] 223
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 141
+@28
+test.led1
+[pattern_trace] 1
+[pattern_trace] 0
