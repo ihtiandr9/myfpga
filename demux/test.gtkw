@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Sat Feb 22 04:05:59 2025
+[*]
+[dumpfile] "/home/user/proj/myfpga.git/demux/test.vcd"
+[dumpfile_mtime] "Sat Feb 22 04:04:23 2025"
+[dumpfile_size] 2140
+[savefile] "/home/user/proj/myfpga.git/demux/test.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-7.713820 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[sst_width] 223
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 141
+@800023
+test.d.port[3:0]
+@29
+(0)test.d.port[3:0]
+(1)test.d.port[3:0]
+(2)test.d.port[3:0]
+(3)test.d.port[3:0]
+@1001201
+-group_end
+@28
+test.d.selector[1:0]
+test.d.signal
+[pattern_trace] 1
+[pattern_trace] 0
