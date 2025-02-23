@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Sun Feb 23 10:26:36 2025
+[*]
+[dumpfile] "/home/user/proj/myfpga.git/led_digit_gen/test.vcd"
+[dumpfile_mtime] "Sun Feb 23 10:23:40 2025"
+[dumpfile_size] 1109
+[savefile] "/home/user/proj/myfpga.git/led_digit_gen/test.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 18 120
+*-4.713819 14 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[sst_width] 223
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 141
+@28
+test.en
+@22
+test.code[7:0]
+@23
+test.led_digit[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
