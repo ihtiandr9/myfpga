@@ -1,0 +1,174 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 16 280 184 296)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk_50" (rect 5 0 40 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -40 296 16 312))
+)
+(pin
+	(output)
+	(rect 1016 320 1192 336)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "led[3..0]" (rect 90 0 138 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1200 320 1264 384))
+)
+(symbol
+	(rect 328 256 448 336)
+	(text "blink" (rect 5 0 33 12)(font "Arial" ))
+	(text "blinker" (rect 8 64 46 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "clk" (rect 21 27 37 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "led" (rect 0 0 17 12)(font "Arial" ))
+		(text "led" (rect 85 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(parameter
+		"counts_1Hz"
+		"50000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 104 64))
+	)
+	(annotation_block (parameter)(rect 328 344 536 376))
+)
+(symbol
+	(rect 560 304 592 320)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 5 25 17)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 18)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 18)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 632 256 880 336)
+	(text "counter" (rect 5 0 48 12)(font "Arial" ))
+	(text "cntr" (rect 8 64 30 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "clk" (rect 21 27 37 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "neg_reset" (rect 0 0 56 12)(font "Arial" ))
+		(text "neg_reset" (rect 21 43 77 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "counter_out[(WIDTH-1)..0]" (rect 0 0 149 12)(font "Arial" ))
+		(text "counter_out[(WIDTH-1)..0]" (rect 101 27 250 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 232 64))
+	)
+	(annotation_block (parameter)(rect 632 216 803 246))
+)
+(connector
+	(pt 184 288)
+	(pt 328 288)
+)
+(connector
+	(pt 448 288)
+	(pt 632 288)
+)
+(connector
+	(pt 632 304)
+	(pt 616 304)
+)
+(connector
+	(pt 616 304)
+	(pt 616 336)
+)
+(connector
+	(pt 576 320)
+	(pt 576 336)
+)
+(connector
+	(pt 576 336)
+	(pt 616 336)
+)
+(connector
+	(text "leds[3..0]" (rect 890 272 933 284)(font "Intel Clear" ))
+	(pt 880 288)
+	(pt 960 288)
+	(bus)
+)
+(connector
+	(pt 960 288)
+	(pt 960 328)
+	(bus)
+)
+(connector
+	(pt 960 328)
+	(pt 1016 328)
+	(bus)
+)
