@@ -40,5 +40,17 @@ test.VGA_B[3:0]
 @28
 test.VGA_HS
 test.VGA_VS
+@24
+test.VGAUnit.x[9:0]
+@25
+test.VGAUnit.y[8:0]
+@24
+test.VGAUnit.xborder
+@28
+test.VGAUnit.yborder
+test.VGAUnit.visible
+test.VGAUnit.r
+test.VGAUnit.g
+test.VGAUnit.b
 [pattern_trace] 1
 [pattern_trace] 0
