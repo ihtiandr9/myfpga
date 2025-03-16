@@ -2,7 +2,7 @@ module blink (
   input wire clk,
   output wire led);
 
-parameter counts_1Hz = 50000000;
+parameter counts_1Hz = 5;
 
   reg [31:0] counter;
   reg LED_status;
@@ -14,7 +14,7 @@ parameter counts_1Hz = 50000000;
 
   always @ (posedge clk) begin
     counter <= counter + 1'b1;
-    if (counter > counts_1Hz) begin
+    if (counter > counts_1Hz - 1) begin
       LED_status <= !LED_status;
       counter <= 32'b0;
     end

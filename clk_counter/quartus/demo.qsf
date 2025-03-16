@@ -70,11 +70,14 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name VERILOG_FILE lib/clk_counter_module.v
 set_global_assignment -name VERILOG_FILE lib/blink_module.v
-set_global_assignment -name VERILOG_FILE ../demux_module.v
 set_global_assignment -name BDF_FILE demo.bdf
 set_location_assignment PIN_23 -to clk_50
 set_location_assignment PIN_84 -to led[0]
 set_location_assignment PIN_85 -to led[1]
 set_location_assignment PIN_86 -to led[2]
-set_location_assignment PIN_87 -to led[3]
+set_location_assignment PIN_88 -to reset
+set_location_assignment PIN_87 -to blinkin
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
