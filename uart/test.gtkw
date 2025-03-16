@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
-[*] Sun Mar  2 13:37:47 2025
+[*] Sun Mar 16 08:08:40 2025
 [*]
 [dumpfile] "/home/user/proj/myfpga.git/uart/build/test.vcd"
-[dumpfile_mtime] "Sun Mar  2 13:33:01 2025"
-[dumpfile_size] 344486
+[dumpfile_mtime] "Sun Mar 16 08:08:10 2025"
+[dumpfile_size] 541387
 [savefile] "/home/user/proj/myfpga.git/uart/test.gtkw"
 [timestart] 0
 [size] 1000 600
-[pos] 35 -197
-*-12.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 172 331
+*-5.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
 [sst_width] 223
 [signals_width] 150
@@ -31,7 +31,7 @@ test.echo[7:0]
 (7)test.echo[7:0]
 @c00023
 test.c1.rcv_stream[8:0]
-@28
+@29
 (0)test.c1.rcv_stream[8:0]
 (1)test.c1.rcv_stream[8:0]
 (2)test.c1.rcv_stream[8:0]
@@ -41,7 +41,7 @@ test.c1.rcv_stream[8:0]
 (6)test.c1.rcv_stream[8:0]
 (7)test.c1.rcv_stream[8:0]
 (8)test.c1.rcv_stream[8:0]
-@1401203
+@1401201
 -group_end
 @1001200
 -group_end
