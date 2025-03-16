@@ -1,14 +1,14 @@
 [*]
 [*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
-[*] Sun Mar  2 13:49:55 2025
+[*] Sun Mar 16 08:24:26 2025
 [*]
 [dumpfile] "/home/user/proj/myfpga.git/vga_module/build/test.vcd"
-[dumpfile_mtime] "Sun Mar  2 13:47:24 2025"
-[dumpfile_size] 13820863
+[dumpfile_mtime] "Sun Mar 16 08:24:18 2025"
+[dumpfile_size] 33838522
 [savefile] "/home/user/proj/myfpga.git/vga_module/test.gtkw"
 [timestart] 0
 [size] 1000 600
-[pos] 630 -257
+[pos] 1506 163
 *-18.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
 [sst_width] 223
@@ -21,7 +21,7 @@ test.clk
 test.VGA_R[3:0]
 @c00023
 test.VGA_G[3:0]
-@28
+@29
 (0)test.VGA_G[3:0]
 (1)test.VGA_G[3:0]
 (2)test.VGA_G[3:0]
@@ -40,5 +40,17 @@ test.VGA_B[3:0]
 @28
 test.VGA_HS
 test.VGA_VS
+@24
+test.VGAUnit.x[9:0]
+@25
+test.VGAUnit.y[8:0]
+@24
+test.VGAUnit.xborder
+@28
+test.VGAUnit.yborder
+test.VGAUnit.visible
+test.VGAUnit.r
+test.VGAUnit.g
+test.VGAUnit.b
 [pattern_trace] 1
 [pattern_trace] 0
