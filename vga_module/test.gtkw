@@ -1,34 +1,44 @@
 [*]
 [*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
-[*] Sat Feb  8 11:29:02 2025
+[*] Sun Mar  2 13:49:55 2025
 [*]
-[dumpfile] "/home/user/proj/myfpga.git/vga_module/test.vcd"
-[dumpfile_mtime] "Sat Feb  8 11:25:17 2025"
+[dumpfile] "/home/user/proj/myfpga.git/vga_module/build/test.vcd"
+[dumpfile_mtime] "Sun Mar  2 13:47:24 2025"
 [dumpfile_size] 13820863
 [savefile] "/home/user/proj/myfpga.git/vga_module/test.gtkw"
-[timestart] 693180
+[timestart] 0
 [size] 1000 600
-[pos] -1 -1
-*-13.713821 713597 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 630 -257
+*-18.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
 [sst_width] 223
-[signals_width] 134
+[signals_width] 110
 [sst_expanded] 1
 [sst_vpaned_height] 141
 @28
 test.clk
+@22
+test.VGA_R[3:0]
+@c00023
+test.VGA_G[3:0]
+@28
+(0)test.VGA_G[3:0]
+(1)test.VGA_G[3:0]
+(2)test.VGA_G[3:0]
+(3)test.VGA_G[3:0]
+@1401201
+-group_end
+@c00022
+test.VGA_B[3:0]
+@28
+(0)test.VGA_B[3:0]
+(1)test.VGA_B[3:0]
+(2)test.VGA_B[3:0]
+(3)test.VGA_B[3:0]
+@1401200
+-group_end
+@28
 test.VGA_HS
 test.VGA_VS
-@22
-test.VGAUnit.x[9:0]
-test.VGAUnit.y[8:0]
-@29
-test.VGAUnit.xborder
-@28
-test.VGAUnit.yborder
-test.VGAUnit.visible
-test.VGAUnit.r
-test.VGAUnit.g
-test.VGAUnit.b
 [pattern_trace] 1
 [pattern_trace] 0

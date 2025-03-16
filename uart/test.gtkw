@@ -1,33 +1,49 @@
 [*]
 [*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
-[*] Fri Feb 14 08:41:28 2025
+[*] Sun Mar  2 13:37:47 2025
 [*]
-[dumpfile] "/home/user/proj/myfpga.git/uart/test.vcd"
-[dumpfile_mtime] "Fri Feb 14 08:40:06 2025"
+[dumpfile] "/home/user/proj/myfpga.git/uart/build/test.vcd"
+[dumpfile_mtime] "Sun Mar  2 13:33:01 2025"
 [dumpfile_size] 344486
 [savefile] "/home/user/proj/myfpga.git/uart/test.gtkw"
 [timestart] 0
 [size] 1000 600
-[pos] -1 -1
-*-12.713820 7393 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 35 -197
+*-12.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
 [sst_width] 223
-[signals_width] 211
+[signals_width] 150
 [sst_expanded] 1
 [sst_vpaned_height] 141
 @28
-test.c1.clk50
+test.clk
 test.rxd
-@24
-test.c1.cnt[9:0]
+@800022
+test.echo[7:0]
 @28
-test.c1.state[2:0]
-@22
-test.c1.recv[7:0]
-@23
+(0)test.echo[7:0]
+(1)test.echo[7:0]
+(2)test.echo[7:0]
+(3)test.echo[7:0]
+(4)test.echo[7:0]
+(5)test.echo[7:0]
+(6)test.echo[7:0]
+(7)test.echo[7:0]
+@c00023
 test.c1.rcv_stream[8:0]
-@420
-test.c1.BIT_TICS
-test.c1.RECVBITS
+@28
+(0)test.c1.rcv_stream[8:0]
+(1)test.c1.rcv_stream[8:0]
+(2)test.c1.rcv_stream[8:0]
+(3)test.c1.rcv_stream[8:0]
+(4)test.c1.rcv_stream[8:0]
+(5)test.c1.rcv_stream[8:0]
+(6)test.c1.rcv_stream[8:0]
+(7)test.c1.rcv_stream[8:0]
+(8)test.c1.rcv_stream[8:0]
+@1401203
+-group_end
+@1001200
+-group_end
 [pattern_trace] 1
 [pattern_trace] 0
