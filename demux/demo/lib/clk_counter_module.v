@@ -15,7 +15,7 @@ module counter(
   assign neg = ~cnt_bus;
   assign cma = neg + 1;
 
-  always @(posedge clk or posedge counter_reset) begin
+  always @(posedge clk) begin
     case(counter_reset)
       1:  cnt <= 0;
       0:  cnt <= cnt + 1;

@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 16 280 184 296)
+	(rect -32 184 136 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk_50" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
@@ -35,12 +35,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -88 200 -32 216))
 )
 (pin
 	(input)
 	(rect -32 200 136 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "key1" (rect 5 0 31 12)(font "Arial" ))
+	(text "key1" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,6 +52,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -88 216 -32 232))
 )
 (pin
 	(output)
@@ -99,34 +101,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 328 256 448 336)
-	(text "blink" (rect 5 0 33 12)(font "Arial" ))
-	(text "blinker" (rect 8 64 46 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 16 12)(font "Arial" ))
-		(text "clk" (rect 21 27 37 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "led" (rect 0 0 17 12)(font "Arial" ))
-		(text "led" (rect 85 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32))
-	)
-	(parameter
-		"counts_1Hz"
-		"50000000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 104 64))
-	)
-	(annotation_block (parameter)(rect 328 344 536 376))
-)
-(symbol
 	(rect 216 160 464 240)
 	(text "counter" (rect 5 0 48 12)(font "Arial" ))
 	(text "inst" (rect 8 64 29 76)(font "Arial" ))
@@ -148,7 +122,7 @@ https://fpgasoftware.intel.com/eula.
 		(pt 248 32)
 		(output)
 		(text "counter_out[(WIDTH-1)..0]" (rect 0 0 149 12)(font "Arial" ))
-		(text "counter_out[(WIDTH-1)..0]" (rect 101 27 250 39)(font "Arial" ))
+		(text "counter_out[(WIDTH-1)..0]" (rect 101 27 227 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(parameter
@@ -161,6 +135,34 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(annotation_block (parameter)(rect 216 120 387 150))
 )
+(symbol
+	(rect 328 256 448 336)
+	(text "blink" (rect 5 0 33 12)(font "Arial" ))
+	(text "blinker" (rect 8 64 46 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "clk" (rect 21 27 37 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "led" (rect 0 0 17 12)(font "Arial" ))
+		(text "led" (rect 85 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(parameter
+		"counts_1Hz"
+		"12000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 104 64))
+	)
+	(annotation_block (parameter)(rect 328 344 534 374))
+)
 (connector
 	(pt 776 272)
 	(pt 816 272)
@@ -170,27 +172,6 @@ https://fpgasoftware.intel.com/eula.
 	(text "blink_signal" (rect 490 296 547 308)(font "Intel Clear" ))
 	(pt 448 288)
 	(pt 592 288)
-)
-(connector
-	(pt 504 272)
-	(pt 504 192)
-	(bus)
-)
-(connector
-	(pt 200 192)
-	(pt 216 192)
-)
-(connector
-	(pt 200 192)
-	(pt 200 288)
-)
-(connector
-	(pt 184 288)
-	(pt 200 288)
-)
-(connector
-	(pt 200 288)
-	(pt 328 288)
 )
 (connector
 	(pt 216 208)
@@ -203,9 +184,18 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "counter[27..28]" (rect 514 256 584 268)(font "Intel Clear" ))
+	(text "clk_in" (rect 146 176 174 188)(font "Intel Clear" ))
+	(pt 136 192)
+	(pt 216 192)
+)
+(connector
+	(text "clk_in" (rect 242 272 270 284)(font "Intel Clear" ))
+	(pt 328 288)
+	(pt 232 288)
+)
+(connector
+	(text "counter[27..26]" (rect 514 256 584 268)(font "Intel Clear" ))
 	(pt 504 272)
 	(pt 592 272)
 	(bus)
 )
-(junction (pt 200 288))

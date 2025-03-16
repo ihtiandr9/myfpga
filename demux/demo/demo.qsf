@@ -72,13 +72,10 @@ set_location_assignment PIN_84 -to leds[0]
 set_location_assignment PIN_85 -to leds[1]
 set_location_assignment PIN_86 -to leds[2]
 set_location_assignment PIN_87 -to leds[3]
-set_location_assignment PIN_89 -to sel[1]
-set_location_assignment PIN_88 -to sel[0]
+set_location_assignment PIN_88 -to key1
+set_location_assignment PIN_23 -to clk_50
+set_global_assignment -name VERILOG_FILE lib/demux_module.v
 set_global_assignment -name VERILOG_FILE lib/clk_counter_module.v
 set_global_assignment -name VERILOG_FILE lib/blink_module.v
-set_global_assignment -name VERILOG_FILE ../demux_module.v
 set_global_assignment -name BDF_FILE demo.bdf
-set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to sel[1]
-set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to sel[0]
-set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to sel
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
