@@ -5,12 +5,10 @@ project(vga)
 
 set(VERILOG_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-set(${PROJECT_NAME}_SRC_FILES
-    ${VERILOG_SRC_DIR}/${PROJECT_NAME}_module.v
-    ${VERILOG_SRC_DIR}/${PROJECT_NAME}_tb.v
-)
+file(GLOB ${PROJECT_NAME}_SRC_FILES ${VERILOG_SRC_DIR}/*v)
 
 message(STATUS "VERILOG_SRC_DIR='${VERILOG_SRC_DIR}'")
+message(STATUS "SOURCES ='${${PROJECT_NAME}_SRC_FILES}'")
 
 add_custom_target(${PROJECT_NAME}.vvp
     ALL iverilog -o ${PROJECT_NAME}.vvp ${${PROJECT_NAME}_SRC_FILES}
