@@ -46,7 +46,7 @@ module test;
 
   /* Make a regular pulsing clock. */
   reg en;
-  reg [7:0] code;
+  reg [3:0] code;
   wire [7:0] seg;
   gendigit_module gen (en, code, seg);
 
